@@ -33,4 +33,4 @@ RUN apt-get update && \
 COPY --from=builder /app/thunderstorm /thunderstorm
 
 # Run the web service on container startup.
-CMD ["/thunderstorm"]
+ENTRYPOINT ["/thunderstorm"]
